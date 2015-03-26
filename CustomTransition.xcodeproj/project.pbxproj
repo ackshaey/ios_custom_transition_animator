@@ -13,6 +13,11 @@
 		685C392F1AC36E0900E0BA1F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 685C392E1AC36E0900E0BA1F /* Images.xcassets */; };
 		685C39321AC36E0900E0BA1F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 685C39301AC36E0900E0BA1F /* LaunchScreen.xib */; };
 		685C393E1AC36E0900E0BA1F /* CustomTransitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685C393D1AC36E0900E0BA1F /* CustomTransitionTests.swift */; };
+		685C39491AC3711600E0BA1F /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685C39471AC3711600E0BA1F /* CustomCollectionViewCell.swift */; };
+		685C394A1AC3711600E0BA1F /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 685C39481AC3711600E0BA1F /* CustomCollectionViewCell.xib */; };
+		685C394D1AC3788900E0BA1F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685C394B1AC3788900E0BA1F /* SecondViewController.swift */; };
+		685C394E1AC3788900E0BA1F /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 685C394C1AC3788900E0BA1F /* SecondViewController.xib */; };
+		685C39501AC37CEB00E0BA1F /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685C394F1AC37CEB00E0BA1F /* Animator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,11 @@
 		685C39371AC36E0900E0BA1F /* CustomTransitionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomTransitionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		685C393C1AC36E0900E0BA1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		685C393D1AC36E0900E0BA1F /* CustomTransitionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTransitionTests.swift; sourceTree = "<group>"; };
+		685C39471AC3711600E0BA1F /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		685C39481AC3711600E0BA1F /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
+		685C394B1AC3788900E0BA1F /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		685C394C1AC3788900E0BA1F /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+		685C394F1AC37CEB00E0BA1F /* Animator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +93,11 @@
 				685C392E1AC36E0900E0BA1F /* Images.xcassets */,
 				685C39301AC36E0900E0BA1F /* LaunchScreen.xib */,
 				685C39251AC36E0900E0BA1F /* Supporting Files */,
+				685C39471AC3711600E0BA1F /* CustomCollectionViewCell.swift */,
+				685C39481AC3711600E0BA1F /* CustomCollectionViewCell.xib */,
+				685C394B1AC3788900E0BA1F /* SecondViewController.swift */,
+				685C394C1AC3788900E0BA1F /* SecondViewController.xib */,
+				685C394F1AC37CEB00E0BA1F /* Animator.swift */,
 			);
 			path = CustomTransition;
 			sourceTree = "<group>";
@@ -195,6 +210,8 @@
 				685C392D1AC36E0900E0BA1F /* Main.storyboard in Resources */,
 				685C39321AC36E0900E0BA1F /* LaunchScreen.xib in Resources */,
 				685C392F1AC36E0900E0BA1F /* Images.xcassets in Resources */,
+				685C394A1AC3711600E0BA1F /* CustomCollectionViewCell.xib in Resources */,
+				685C394E1AC3788900E0BA1F /* SecondViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,7 +229,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				685C39501AC37CEB00E0BA1F /* Animator.swift in Sources */,
+				685C394D1AC3788900E0BA1F /* SecondViewController.swift in Sources */,
 				685C392A1AC36E0900E0BA1F /* ViewController.swift in Sources */,
+				685C39491AC3711600E0BA1F /* CustomCollectionViewCell.swift in Sources */,
 				685C39281AC36E0900E0BA1F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

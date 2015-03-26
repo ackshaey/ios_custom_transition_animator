@@ -9,14 +9,31 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UINavigationControllerDelegate {
 
     var window: UIWindow?
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        
+        
+        // We need to grab the navigation view controller to intercept the animation to add a custom transition to this process. We need to pass our custom animator to the UI Window.
+        let navController = application.delegate?.window??.rootViewController as UINavigationController
+        navController.delegate = self
+        
+        
+        
+        
+        
+        
+    
         return true
+    }
+    
+    // We needed to implement this to intercept and pass in our own animator.
+    func navigationController(navigationController: UINavigationController, animationControllerForOperation operation: UINavigationControllerOperation, fromViewController fromVC: UIViewController, toViewController toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return Animator(operation: operation)
     }
 
     func applicationWillResignActive(application: UIApplication) {
